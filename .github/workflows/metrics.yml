@@ -1,0 +1,59 @@
+# Generates GitHub profile metric SVGs and commits them to this repo.
+# Only Profile Overview + Languages — habits/activity/calendar removed (broken for private-only accounts).
+# Pinned to v3.34 for stability.
+
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+
+      - name: Profile Overview
+        uses: lowlighter/metrics@v3.34
+        with:
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: umangbuilds
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          commits_authoring: UG, Umang Gupta, Umg Gpt, umg-gpt, umangbuilds, OpenClaw Agent, umang13, umang8, ug@UGs-MacBook-Pro.local, umg.gpt@gmail.com, umang@moltpe.com
+          plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
+          plugins_errors_fatal: no
+          output_action: commit
+          committer_message: "chore: update metrics"
+          config_output: svg
+
+      - name: Languages
+        uses: lowlighter/metrics@v3.34
+        if: always()
+        with:
+          filename: metrics.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: umangbuilds
+          base: ""
+          config_timezone: Asia/Kolkata
+          commits_authoring: UG, Umang Gupta, Umg Gpt, umg-gpt, umangbuilds, OpenClaw Agent, umang13, umang8, ug@UGs-MacBook-Pro.local, umg.gpt@gmail.com, umang@moltpe.com
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, less, dockerfile, makefile, shell, nix, procfile
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_limit: 8
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 45
+          plugins_errors_fatal: no
+          output_action: commit
+          config_output: svg
