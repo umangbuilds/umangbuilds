@@ -125,11 +125,42 @@ MoltPe handles real money — security is non-negotiable. Every layer is hardene
 | **Mar 2026** | Integrated Coinbase x402 SDK + MCP server |
 | **Mar 2026** | Added Base chain + MPP paywall protocol |
 | **Apr 2026** | 110+ PRs merged, collections suite, open source repo published |
+| **Apr 2026** | India content cluster launched — 25+ pages, original cost benchmark, AEO infrastructure |
+
+---
+
+## Recent Writing
+
+Long-form deep dives on AI agent payments, the x402 protocol, and building for Indian developers:
+
+**Developer-focused**
+- [Why developers choose MoltPe for AI agent payments](https://moltpe.com/blog/why-developers-choose-moltpe-for-ai-agent-payments)
+- [Integrate MoltPe in 5 minutes — developer quickstart](https://moltpe.com/blog/integrate-moltpe-in-5-minutes-developer-quickstart)
+- [MoltPe vs building your own AI payment stack](https://moltpe.com/blog/moltpe-vs-building-your-own-ai-payment-stack)
+- [The MCP server for AI agent payments](https://moltpe.com/blog/mcp-server-for-ai-agent-payments)
+- [MoltPe developer experience: a deep dive](https://moltpe.com/blog/moltpe-developer-experience-deep-dive)
+
+**India-focused (where MoltPe serves Indian AI builders)**
+- [AI Agent Payments in India: Complete Guide (2026)](https://moltpe.com/india) — pillar
+- [The Cost of AI Agent Payments in India: 2026 Benchmark](https://moltpe.com/blog/cost-of-ai-agent-payments-india-2026-benchmark) — original research
+- [USDC payments for Indian developers](https://moltpe.com/blog/usdc-payments-india-developers)
+- [Freelance AI developer payments in India](https://moltpe.com/blog/freelance-ai-developer-payments-india)
+- [The complete payments stack for Indian AI startups](https://moltpe.com/blog/ai-startup-india-payments-infrastructure)
+- [x402 protocol for Indian developers](https://moltpe.com/blog/x402-protocol-india-developers)
+
+**City-specific India guides**
+[Bangalore](https://moltpe.com/blog/bangalore-ai-developers-usdc-payments) · [Hyderabad](https://moltpe.com/blog/hyderabad-ai-startup-payments-guide) · [Pune](https://moltpe.com/blog/pune-indie-developer-international-payments) · [Delhi NCR](https://moltpe.com/blog/delhi-ncr-ai-api-monetization) · [Chennai](https://moltpe.com/blog/chennai-ml-engineer-freelance-dollars)
+
+**Protocol fundamentals**
+- [What are AI agent payments?](https://moltpe.com/blog/what-are-ai-agent-payments)
+- [The x402 protocol: complete guide](https://moltpe.com/blog/x402-protocol-complete-guide)
+- [Machine Payments Protocol (MPP) guide](https://moltpe.com/blog/machine-payments-protocol-mpp-guide)
+- [AI agent spending policies explained](https://moltpe.com/blog/ai-agent-spending-policies-guide)
 
 ---
 
 <div align="center">
 
-[moltpe.com](https://moltpe.com) · [Open Source](https://github.com/umangbuilds/moltpe-agent-payments) · [Code Quality](https://moltpe.com/quality) · [Security](https://moltpe.com/security) · [Research](https://moltpe.com/research)
+[moltpe.com](https://moltpe.com) · [Open Source](https://github.com/umangbuilds/moltpe-agent-payments) · [India Guide](https://moltpe.com/india) · [Code Quality](https://moltpe.com/quality) · [Security](https://moltpe.com/security) · [Research](https://moltpe.com/research)
 
 </div>
